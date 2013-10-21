@@ -1,0 +1,460 @@
+/*
+  Resets
+*/
+
+.fg-panel a, .fg-panel img, .fg-panel ul, .fg-panel li, .fg-panel span { 
+    text-decoration: none;
+	list-style-type: none !important;
+	list-style: none !important;
+	background: none;
+	outline: none; 
+	margin: 0px;
+	padding: 0px;
+	border: 0;
+	vertical-align: baseline;
+	font-size: 100%;
+	max-width: 100%;
+}
+
+
+.fg-panel > div > a {
+	display: none;
+}
+
+
+/*
+  Album selection with dropdown
+*/
+
+/* White Theme */
+.fg-dropdown .fg-current-album-white {
+	background: #FBFBFB url(../images/fancygallery/arrows_black.png) 95% center no-repeat;
+	border: 1px solid #CCCCCC;
+	color: #333333;
+}
+
+.fg-dropdown .fg-dropdown-list-white {
+	background: #fff;
+	border-bottom: 1px solid #cccccc;
+}
+
+.fg-dropdown-list-white li {
+	border: 1px solid #cccccc;
+	color: #333333;
+}
+
+.fg-dropdown-list-white li:hover {
+	background: #f9f9f9;
+}
+
+/* Black Theme */
+.fg-dropdown .fg-current-album-black {
+	background: #161616 url(../images/fancygallery/arrows_white.png) 95% center no-repeat;
+	border: 1px solid #000000;
+	color: #ffffff;
+}
+
+.fg-dropdown .fg-dropdown-list-black {
+	background: #111111;
+	border-bottom: 1px solid #000000;
+}
+
+.fg-dropdown-list-black li {
+	border: 1px solid #000000;
+	color: #fff;
+}
+
+.fg-dropdown-list-black li:hover {
+	background: #222222;
+}
+
+/* Blue Theme */
+.fg-dropdown .fg-current-album-blue {
+	background: #ecf9ff url(../images/fancygallery/arrows_black.png) 95% center no-repeat;
+	border: 1px solid #a4dfff;
+	color: #67B7E1;
+}
+
+.fg-dropdown .fg-dropdown-list-blue {
+	background: #dff5ff;
+	border-bottom: 1px solid #a4dfff;
+}
+
+.fg-dropdown-list-blue li {
+	border: 1px solid #a4dfff;
+	color: #67B7E1;
+}
+
+.fg-dropdown-list-blue li:hover {
+	background: #f3fbff;
+}
+
+/* Color Template - Create your own color theme with this CSS template */
+/*.fg-dropdown .fg-current-album-custom {
+	background: #ecf9ff url(../images/fancygallery/arrows_black.png) 95% center no-repeat;
+	border: 1px solid #a4dfff;
+	color: #67B7E1;
+}
+
+.fg-dropdown .fg-dropdown-list-custom {
+	background: #dff5ff;
+	border-bottom: 1px solid #a4dfff;
+}
+
+.fg-dropdown-list-custom li {
+	border: 1px solid #a4dfff;
+	color: #67B7E1;
+}
+
+.fg-dropdown-list-custom li:hover {
+	background: #f3fbff;
+}*/
+
+/* Standard stlyes for the dropdown */
+.fg-dropdown {
+	width: 200px; /* Change here the width of the dropdown */
+	margin-bottom: 10px;
+	position: relative;
+	float: left; /* Set here the floating, to have the dropdown at the right, just set the value to right */
+}
+
+.fg-dropdown .fg-current-album {
+	font-weight: bold;
+	font-size: 12px;
+	padding: 5px 5px;
+	cursor: pointer;
+}
+
+.fg-dropdown .fg-dropdown-list {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: auto;
+	max-height: 115px; /* Change here the height of the dropdown list */
+	overflow: auto;
+	z-index: 10;
+}
+
+.fg-dropdown-list li {
+	border-top: 0;
+	padding: 5px 5px;
+	font-size: 11px;
+	cursor: pointer;
+}
+
+.fg-dropdown-list li:last-child {
+	border-bottom: 0;
+}
+
+
+/*
+  Album selection with menu
+*/
+ul.fg-albumSelecter {
+	border-top: 1px solid #EAEAEA; /* Color of the upper line */
+	line-height: 35px;
+	height: 35px;
+}
+
+ul.fg-albumSelecter li {
+	list-style: none !important;
+	float: left;
+	line-height: 35px;
+	margin-right: 20px;
+}
+
+ul.fg-albumSelecter li a {
+	display: block;
+	color: #b8b8b8;
+	font-size: 12px;
+	font-family: Helvetica;
+}
+
+ul.fg-albumSelecter li.selected {
+	line-height: 29px !important;
+}
+
+ul.fg-albumSelecter li.selected a {
+	border-top: 3px solid #67B7E1;  /* Color for the upper line of the selected menu item */
+	color: #67B7E1;
+}
+
+
+/*
+ * Album selection with thumbnails
+*/
+ul.fg-thumbail-selection {
+	border: none;
+}
+
+li.fg-album-thumbnail {
+	border: 1px solid #e9e9e9; /* Border Color */
+	float: left;
+	line-height: 0 !important;
+	width: 250px;
+	margin-bottom: 40px;
+	margin-right: 40px !important;
+	-webkit-box-shadow:  0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+    box-shadow:  0px 2px 2px 0px rgba(0, 0, 0, 0.1);
+}
+
+li.fg-album-thumbnail:hover {
+	border: 1px solid #67B7E1;
+	-webkit-box-shadow:  0px 2px 2px 0px rgba(103, 183, 225, 0.5);
+    box-shadow:  0px 2px 2px 0px rgba(103, 183, 225, 0.5);
+}
+
+li.fg-album-thumbnail a {
+	overflow: hidden;
+	display: block;
+	width: 250px; /* Change here the width for the thumbnails in the thumbnail selection */
+	height: 150px; /* Change here the height for the thumbnails in the thumbnail selection */
+}
+
+li.fg-album-thumbnail img {
+	width: 100%;
+}
+
+li.fg-album-thumbnail > div {
+	display: inline-block;
+	width: 100%;
+}
+
+li.fg-album-thumbnail .fg-album-thumbnail-title {
+	height: 40px;
+	line-height: 18px;
+	margin: 10px 20px;
+	font-size: 14px;
+	font-weight: bold;
+	overflow: hidden;
+	text-shadow: 0px 1px 0px #ffffff;
+}
+
+li.fg-album-thumbnail .fg-album-thumbnail-length {
+	color: #a9a9a9;
+	border-top: 1px solid #e9e9e9;
+	margin: 0px 20px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 11px;
+	text-shadow: 0px 1px 0px #ffffff;
+}
+
+
+/*
+ * Horizontal line between thumbnails and menu/dropdown
+*/
+.fg-line {
+	border: 0px;
+ 	border-top: solid 1px #EAEAEA; /* the top color of the line */
+	border-bottom: solid 1px #fff;  /* the bottom color of the line */
+	display: block;
+	clear: both !important;
+	margin: 0 0 25px 0px !important;
+}
+
+/*
+ * Holder for all thumbnails of an album
+*/
+.fg-thumbHolder	{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	clear: both !important;
+}
+
+.fg-listItem {
+	position: relative;
+	float: left;
+	list-style: none !important;
+}
+
+a.fg-image {
+	position: absolute;
+	z-index: 2;
+	overflow: hidden;
+	border: 1px solid #cccccc;
+	border-bottom: none;
+}
+
+img.fg-thumb	{
+	margin: auto !important;
+	display: none;
+}
+
+img.fg-second-thumb {
+	position: absolute;
+	display: none;
+}
+
+/*
+ * The title under every thumbnail
+*/
+.fg-listItem  span.fg-title	{
+	max-width: 100%;
+	font-size: 12px; /* the size of the title */
+	height: 0;
+	position: absolute;
+	z-index: 100;
+	border: 1px solid #cccccc;
+	border-top: none;
+}
+
+.fg-shadow	{
+	position: absolute;
+	z-index: 0;
+}
+
+.fg-hover-image {
+	position: absolute;
+	display: none;
+	z-index: 3;
+}
+
+.fg-error {
+	padding: 5px !important;
+	background: #ffd2d3;
+	border: 1px solid #df8f90;
+	color: #000;	
+}
+
+/*
+ * Navigation for every album
+*/
+
+/*
+ * Back to albums overview - only when album selection is set to thumbnails
+*/
+.fg-back-to-albums {
+	margin-right: 25px !important;
+}
+
+.fg-navigation a, .fg-navigation span {
+	display: inline-block !important;
+}
+
+/*
+ * Dots navigation
+*/
+
+a.fg-navigation-dot {
+	margin-right: 10px;
+	width: 12px;
+	height: 12px;
+	-webkit-border-radius: 15px;
+	border-radius: 15px;
+}
+
+/*
+ * Pagination navigation
+*/
+
+a.fg-pagination {
+	font-family: "Helvetica Neue";
+	font-weight: bold;
+	margin-right: 5px;
+	margin-bottom: 10px;
+	font-size: 13px;
+	text-align: center;
+	width: 23px;
+	height: 23px;
+	line-height: 23px;
+	z-index: 1000;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+
+/*
+ * White and Black color scheme for the navigation
+*/
+a.fg-nav-white, a.fg-nav-white:visited {
+	color: #6E6E6E;
+	border: 1px solid #cacaca;
+	background: #fbfbfb;
+	background: -moz-linear-gradient(top,  #fbfbfb 0%, #ebebeb 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fbfbfb), color-stop(100%,#ebebeb));
+	background: -webkit-linear-gradient(top,  #fbfbfb 0%,#ebebeb 100%);
+	background: -o-linear-gradient(top,  #fbfbfb 0%,#ebebeb 100%);
+	background: -ms-linear-gradient(top,  #fbfbfb 0%,#ebebeb 100%);
+	background: linear-gradient(to bottom,  #fbfbfb 0%,#ebebeb 100%);
+	-webkit-box-shadow: 0px 1px 1px 0px #e1e1e1, inset 0px 1px 0px 0px #ffffff;
+	box-shadow: 0px 1px 1px 0px #e1e1e1, inset 0px 1px 0px 0px #ffffff;
+	text-shadow: 0px 1px 0px #ffffff;
+}
+
+a.fg-nav-white:hover {
+	background: #fff;
+}
+
+a.fg-nav-white-selected {
+	color: #ffffff !important;
+	border: none;
+	background: #666666 !important;
+	-webkit-box-shadow:  0px 1px 1px 0px #ffffff, inset 0px 1px 2px 0px #505050;
+	box-shadow:  0px 1px 1px 0px #ffffff, inset 0px 1px 2px 0px #505050;
+	text-shadow: 0px 1px 0px #585858;
+}
+
+
+a.fg-nav-black, a.fg-nav-black:visited {
+	color: #fff;
+	border: 1px solid #131313;
+	background: #4c4c4c;
+	background: -moz-linear-gradient(top,  #4c4c4c 0%, #191919 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4c4c4c), color-stop(100%,#191919));
+	background: -webkit-linear-gradient(top,  #4c4c4c 0%,#191919 100%);
+	background: -o-linear-gradient(top,  #4c4c4c 0%,#191919 100%);
+	background: -ms-linear-gradient(top,  #4c4c4c 0%,#191919 100%);
+	background: linear-gradient(to bottom,  #4c4c4c 0%,#191919 100%);
+	-webkit-box-shadow: inset 0px 1px 0px 0px #434343;
+	box-shadow: inset 0px 1px 0px 0px #434343;
+	text-shadow: 0px 1px 0px #000;
+}
+
+a.fg-nav-black:hover {
+	background: #131313;
+}
+
+a.fg-nav-black-selected {
+	background: #000 !important;
+	border: 1px solid #323538;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+}
+
+/* This is an example class for a custom navigation color scheme */
+a.fg-nav-custom, a.fg-nav-custom:visited {
+	
+}
+
+a.fg-nav-custom:hover {
+	
+}
+
+a.fg-nav-custom-selected {
+	
+}
+
+
+/* 
+  Helper 
+*/
+.radykal-clearfix:after {  
+    content: ".";  
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+ 
+* + html .radykal-clearfix { 
+    display: inline-block;
+}
+ 
+* html .radykal-clearfix { 
+	height: 1%;
+}
+
+.none {
+	display: none;
+}

@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html class="no-js multiview">
+    <head>
+
+        <title>MYPLAYDAR</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />		
+        <link rel="stylesheet" href="jquery.mobile-1.0.css" />	
+        <link rel="stylesheet" type="text/css" href="jquery.mobile.scrollview.css" />
+        <link rel="stylesheet" type="text/css" href="jquery.mobile.multiview.css" />
+        <!-- bxSlider CSS file -->
+        <link rel="stylesheet" type="text/css" href="css/li-scroller.css" />
+
+
+
+        <link href="demo.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/idangerous.swiper.css">
+        <style>
+            /* Demo Syles */
+            body {
+                margin: 0;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 13px;
+                line-height: 1.5;
+            }
+
+            .device .arrow-left {
+                background: url(img/arrows.png) no-repeat left top;
+                position: absolute;
+                left: 10px;
+                top: 50%;
+                margin-top: -15px;
+                width: 17px;
+                height: 30px;
+            }
+            .device .arrow-right {
+                background: url(img/arrows.png) no-repeat left bottom;
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                margin-top: -15px;
+                width: 17px;
+                height: 30px;
+            }
+            .swiper-container {
+                position: relative;
+                height: 300px;
+                width: 100%;
+            }
+            .content-slide {
+                padding: 20px;
+                width: 50%;
+                color: #fff;
+            }
+            .title {
+                font-size: 25px;
+                margin-bottom: 10px;
+            }
+            .pagination {
+                position: relative;
+                left: 0;
+                text-align: center;
+                bottom:5px;
+                width: 100%;
+            }
+            .swiper-pagination-switch {
+                display: inline-block;
+                width: 10px;
+                height: 10px;
+                border-radius: 10px;
+                background: #999;
+                box-shadow: 0px 1px 2px #555 inset;
+                margin: 0 3px;
+                cursor: pointer;
+            }
+            .swiper-active-switch {
+                background: #fff;
+            }
+            .page-map, .ui-content, #map-canvas { width: 100%; height: 100%; padding: 0; }
+			.page-map-near, .ui-content, #map-canvas-near { width: 100%; height: 100%; padding: 0; }
+
+        </style>
+        <style type="text/css">
+            .middleClass {text-align: center; margin-top: 25%;}
+            code { padding: 0 0.5em;}
+            .blank, .blank li {font-size: 95%;}
+            .ui-page { background: #ffffff;}
+            ui-grid-d {text-align: center;}
+            fieldset img, img {display: block; margin: 0 auto; }
+            * {font-size: 13px;}
+            /* iOS Default */
+            a[data-role="button"][data-theme="reset"].ios .ui-btn-inner {
+                border: 1px solid rgba(0,0,0, 0.4);
+                text-shadow: 0 -1px 0 rgba(0, 0, 0, .5);
+                background: -webkit-linear-gradient(top, #89A0BE 0%,#5877A2 50%,#486A9A 51%,#4A6C9B 100%);
+            }
+
+            /* iOS Red */
+            a[data-role="button"][data-theme="reset"].ios.red .ui-btn-inner {
+                background: -webkit-linear-gradient(top, #DC7679 0%,#DC7679 49%,#CD2A27 50%,#C92A29 100%);
+            }
+
+            /* iOS Blue */
+            a[data-role="button"][data-theme="reset"].ios.blue .ui-btn-inner {
+                background: -webkit-linear-gradient(top, #376FE0 0%,#376FE0 49%,#2361DE 50%,#2463DE 100%);
+            }
+
+            /* iOS Black */
+            a[data-role="button"][data-theme="reset"].ios.black .ui-btn-inner {
+                background: -webkit-linear-gradient(top, #6A6A6A 0%,#313131 49%,black 50%,black 100%);
+            }
+
+            .jContent div.slides {
+                border: 5px solid #CCCCCC;
+                height: 140px;
+            }
+            .jContent p.title {
+                font-size: 16px;
+                font-weight: bold;
+                padding: 2px 2px 0 25px;
+            }
+            .jContent p.txt {
+                font-size: 14px;
+                line-height: 16px;
+                padding: 10px 20px 0;
+            }
+            .jContent p.txt img {
+                border: 5px solid #FFFFFF;
+                display: block;
+                float: left;
+                margin: 0 2px 2px 0;
+            }
+
+
+
+        </style>
+
+        <style type="text/css">
+
+            body {
+                background: transparent url(images/bg.jpg);
+                background-repeat:repeat-y;
+                background-position:center center;
+                background-attachment:scroll;
+                background-size:100% 100%;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 12px;
+
+            }
+            .ui-page {
+                background: transparent;
+
+            }
+            .panelmenu{
+                background: transparent;
+            }
+            div.ui-panel {
+                background: #FFF;
+            }
+            #table1 {
+                width: 800px;
+            }
+            #table1 td {
+                text-align: center;
+                vertical-align: top;
+            }
+            ul {
+                text-align: left;
+                font-size: 12px;
+            }
+            /* custom icons */
+            .ui-icon-phone,
+            .ui-icon-email,
+            .ui-icon-chat {
+                background-image: url(/vpapp/images/icons-18-white-pack.png);
+                background-repeat: no-repeat;
+                background-color:red;
+            }
+            .ui-icon-phone {
+                background-position: 9.5% 100%;
+            }
+            .ui-icon-email {
+                background-position: 0 50%;
+            }
+            .ui-icon-chat {
+                background-position: 47.5% 50%;
+            }
+        </style>
+
+
+    </head>
+    <body>
+
+
+        <div data-role="page" id="wrap1" data-wrapper="true">
+
+
+            <!-- ////////////// embedded menu panel /////////////  -->
+            <div data-role="panel" data-id="menu"  data-panel="menu" id="panelmenu">				  		 	 
+
+                <div data-role="page" id="starthere" data-show="first">
+                    <div data-role="header" data-position="fixed" data-theme="a">			
+                        <h2>Myplaydar</h2>
+                    </div>
+                    <div data-role="content">
+                        <p>Welcome to Myplaydar Mobile Application</p>
+
+                        <ul data-role="listview" data-inset="true" data-theme="d" data-divider-theme="a">		
+                            <li data-role="list-divider">MAIN MENU </li>
+                            <li><a href="#core" data-target="main">About</a></li>
+                            <li><a href="#transitionHandler" data-target="main">Show friends</a></li>							
+                            <li><a href="#nearme" data-target="main">Show near me</a></li>
+                            <li><a href="#transitionPage" data-target="main">Invite friend</a></li>
+                            <li><a href="#changeHash" data-target="main">Clear</a></li>
+
+                        </ul>
+                        <ul data-role="listview" data-inset="true" data-theme="d" data-divider-theme="a">		
+                            <li data-role="list-divider"><marquee><span style="font-size:14px;">HOT BUTTONS</span></marquee></li>
+                        </ul>
+                        <a href="tel:5555555555" data-role="button" data-icon="phone" data-iconpos="right" style="color:green; ";>Call</a>
+                        <a href="sms:jan@myplaydar.com" data-role="button" data-icon="chat" data-iconpos="right" style="color:green; ">Send SMS</a>	
+                        <a href="mailto:jan@myplaydar.com" data-role="button" data-icon="email" data-iconpos="right" style="color:green; ">Send Email</a>	
+                    </div>
+                </div>
+
+
+
+
+
+            </div><!-- end panel -->
+
+            <!-- ////////////// embedded main panel ///////////////  -->		
+            <div data-role="panel" data-id="main" data-panel="main" >		
+
+                <div data-role="page" id="mainInit" data-show="first">
+                    <div data-role="header" data-position="fixed" data-theme="a">			
+                        <h1>Main Section</h1>
+                    </div>
+                    <div data-role="content">
+                        <p class="middleClass">Load some content here... </p>																		
+                    </div>
+                </div>
+
+
+
+                <!-- layout pages -->
+
+                <div data-role="page" id="core"  >
+                    <div data-role="header" data-position="fixed" data-theme="a">			
+                        <h1>About</h1>
+                    </div>
+                    <div data-role="content" style="width:100%; height:100%; padding:0;"> 
+About MyPlaydar here !!!
+                    </div>
+                </div>
+
+                <div data-role="page" id="transitionPage" >
+                    <div data-role="header" data-position="fixed" data-theme="a">			
+                        <h1>Invit Friends</h1>
+                    </div>
+                    <div data-role="content" style="width:100%; height:100%; padding:0;"> 
+
+                    </div>
+                </div>
+                <div data-role="page" id="transitionHandler" class="page-map" style="width:100%; height:100%;">
+                    <div data-role="header" data-position="fixed" data-theme="a">			
+                        <h1>Show Friends</h1>
+                    </div>
+                     <div data-role="content" style="width:100%; height:100%; padding:0;"> 
+                        <div id="map_canvas" style="width:100%; height:100%;"></div>
+
+                    </div>
+                </div>
+                <div data-role="page" id="changePage" >
+                    <div data-role="header" data-position="fixed" data-theme="a">			
+                        <h1>changePage</h1>
+                    </div>
+                    <div data-role="content">
+                        <p></p>																		
+
+                        <fieldset class="ui-grid-a">
+                            <div class="ui-block-a">
+                                <h3>JQM 1.0</h3>
+                                <!-- <pre>
+                                $.mobile.changePage(
+                                    url,{
+                                                type:		type && type.length && type.toLowerCase() || "get",
+                                                data:		$this.serialize(),
+                                                transition:	$this.jqmData( "transition" ),
+                                                direction:	$this.jqmData( "direction" ),
+                                                reloadPage:	true
+                                                }
+                                ...
+                                $.mobile.changePage( href, { transition: transition, reverse: reverse, role: role } );
+                                event.preventDefault();
+                                </pre> -->								
+                            </div>
+                            <div class="ui-block-b">
+                                <h3>JQM 1.0.multiview</h3>
+
+                                <p>Add page container as option, set to body on JQM transitions, check for targetPanel specified (data-target=)
+                                    and re-route to plugin in case a target panel is set.</p>
+                            </div>	   							
+                        </fieldset>	
+
+                    </div>
+                </div>
+                <div data-role="page" id="changeHash" >
+                    <div data-role="header" data-position="fixed" data-theme="a">			
+                        <h1>Links</h1>
+                    </div>
+                    <div data-role="content">
+                        <p></p>																		
+
+                        <fieldset class="ui-grid-a">
+                            <div class="ui-block-a">
+                                <h3>JQM 1.0</h3>
+                                <!-- <pre>
+                                //transition is false if it's the first page, undefined otherwise (and may be overridden by default)
+                                transition = $.mobile.urlHistory.stack.length === 0 ? "none" : undefined,
+                                
+                                // default options for the changPage calls made after examining the current state
+                                // of the page and the hash
+                                changePageOptions = {
+                                                transition: transition,
+                                                changeHash: false,
+                                                fromHashChange: true
+                                                };
+                                ...
+                                $.mobile.changePage( to, changePageOptions );
+                                    } else {
+                                    //there's no hash, go to the first page in the dom
+                                        $.mobile.changePage( $.mobile.firstPage, changePageOptions );
+                                        }
+                                </pre> -->								
+                            </div>
+                            <div class="ui-block-b">
+                                <h3>JQM 1.0.multiview</h3>
+                                <!-- <pre>
+                                $panels = $('div:jqmData(wrapper="true").ui-page-active div:jqmData(hash="history")'),
+                                n = $panels.length,	
+                                
+                                //transition is false if it's the first page, undefined otherwise (and may be overridden by default)
+                                transition = ( $.mobile.urlHistory.stack.length === 0 || n == 0 ) ? "none" : undefined,
+                                
+                                // default options for the changPage calls made after examining the current state
+                                // of the page and the hash
+                                changePageOptions = {
+                                                transition: transition,
+                                                changeHash: false,
+                                                fromHashChange: true,
+                                                pageContainer: $.mobile.pageContainer,
+                                                };
+                                ....
+                                if( !n || n>0 && urlHistory.stack.length > 1 
+                                    // this is still a mess...
+                                    || ( $('html').data('panel-history') == 'base' && ( to == $.mobile.urlHistory.stack[$.mobile.urlHistory.stack.length-1].url) ) ) {	
+                                            if ( $('html').data('panel-history') == 'base' && ( to == $.mobile.urlHistory.stack[$.mobile.urlHistory.stack.length-1].url) ) {
+                                                        // reset, set option								
+                                                        $('html').data('panel-history','');
+                                                        changePageOptions = {
+                                                                transition: 'slide'
+                                                                }
+                                                        }							
+                                                        $.mobile.changePage( to, changePageOptions );							
+                                                }
+                                        } else {
+                                            if( !n || n>0 && urlHistory.stack.length > 1 ){
+                                                    $.mobile.changePage( $.mobile.firstPage, changePageOptions );
+                                                    }
+                                                }
+                                </pre> -->				
+                                <p>Needs work: Re-route to panel history routine if panels on the page with data-hash="history" set. If wrapper page is external-page and panel-history is active, I cannot leave the wrapper and go back to the page visited before going to the wrapper, unless it's done like this</p>
+                            </div>	   							
+                        </fieldset>	
+
+                    </div>
+                </div>
+
+                <div data-role="page" id="nearme" class="page-map-near" style="width:100%; height:100%;" >
+
+                    <div data-role="header">
+                        <h1>Show Near Me</h1>
+
+
+                    </div><!-- /header -->
+
+                     <div data-role="content" style="width:100%; height:100%; padding:0;"> 
+                        <div id="map_canvas-near" style="width:100%; height:100%;"></div>
+
+                    </div>
+                </div>
+                    <!-- /content -->
+
+                    <!-- footer -->
+                    <div data-role="footer" data-position="fixed">
+                        <!-- navbar 
+            <div data-role="navbar">
+                <ul>
+                    <li><a href="#" data-icon="doc">News</a></li>
+                    <li><a href="#" data-icon="basket" class="ui-btn-active">Call</a></li>
+                    <li><a href="#" data-icon="rss">RSS</a></li>
+                    <li><a href="#" data-icon="th-list">My Requests</a></li>
+                    <li><a href="#" data-icon="export">Email</a></li>
+                </ul>
+            </div> /navbar -->
+                    </div><!-- /footer -->
+                </div><!-- /page -->			
+
+
+
+
+
+
+
+
+            </div><!-- end panel -->
+
+            <!-- global footer = inside wrapper, outside panel -->
+            <div data-role="footer" data-id="mainFooter" data-position="fixed">
+                <div data-role="navbar" data-grid="d">
+                    <ul>	
+
+                    </ul>
+                </div>
+            </div>	
+
+        </div><!-- end wrapper page -->
+
+
+
+
+    </body>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>					
+    <script type="text/javascript" src="jquery.mobile-1.0multiview.js"></script>		
+    <script src="jquery.easing.1.3.js" type="text/javascript"></script>
+    <script src="jquery.mouseSwipe.js" type="text/javascript"></script>
+    <script type="text/javascript" src="jquery.mobile.scrollview.js"></script>
+    <script type="text/javascript" src="jquery.mobile.multiview.js"></script>
+    <link href="mouseSwipe.css" rel="stylesheet" type="text/css" />
+    <link type="text/css" rel="stylesheet" href="css/style.css" >
+
+    <script src="jquery.scrollbox.js"></script>
+    <script type="text/javascript" language="javascript" src="js/jquery.jcontent.0.7.js"></script>
+    <script type="text/javascript" language="javascript" src="js/jquery.li-scroller.1.0.js"></script>
+	<script type="text/javascript" language="javascript" src="js/jquery.cookie.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script> 
+    <script type="text/javascript" src="ui/jquery.ui.map.js"></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("div#demo").jContent({orientation: 'vertical', 
+                easing: 'easeOutCirc', 
+                duration: 1000,
+                auto: true,
+                direction: 'next', //or 'prev'
+                pause: 3000,
+                pause_on_hover: true}); 
+            $("ul#ticker01").liScroll();
+ 			
+		
+        });
+
+    </script>
+    <script type="text/javascript">
+        // When map page opens get location and display map
+        $('.page-map').live("pagecreate", function() {
+            if(navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position){
+                    initialize(position.coords.latitude,position.coords.longitude);
+                });
+            }
+        });
+		 $('.page-map-near').live("pagecreate", function() {
+            if(navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position){
+                    initializeNear(position.coords.latitude,position.coords.longitude);
+                });
+            }
+        });
+        var map;
+		var mapNear;
+        function initialize(lat,lng) {
+		
+            var latlng = new google.maps.LatLng(lat, lng);
+            var myOptions = {
+                zoom: 8,
+                center: latlng,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            map = new google.maps.Map(document.getElementById("map_canvas"),myOptions);
+				 
+            var point = new google.maps.LatLng(lat, lng);
+            var marker = new google.maps.Marker({
+                position:point,
+                map:map,
+                title:'Hello VTS',
+                draggable:true,
+            });  
+            google.maps.event.addListener(marker, 'click', function() {
+                var infowindow = new google.maps.InfoWindow({
+                    content: '<div style="overflow: auto;" class=""><img style="float:right" src="https://flpics1.a.ssl.fastly.net/49/49905/podcast_home_coochie_20081006212150_60.jpg"><div><a href="jumpprofile.php?id=3242"><b>coochie</b></a><br><small>St. Paul, MN<br>32 F</small></div></div>'
+                });
+                infowindow.open(map, this);
+            });
+            $.ajax({
+                type       : "GET",
+                url        : "http://myplaydar.com/members/api/userlist_get.php",
+                data       : {type : 'rel', reltype : '1',SESSID:$.cookie("SESSID")},
+                dataType   : 'json',
+                success    : function(response) {
+                    var data =JSON.stringify(response.markers);
+                    var json = $.parseJSON(JSON.stringify(response.markers));
+                    $(json).each(function(i,val){
+                        // alert(JSON.stringify(val));
+                        var m = new google.maps.Marker({
+                            position:new google.maps.LatLng(val.latitude, val.longitude),
+                            map:map,
+                            title:val.username,
+                            draggable:true,
+                        });  
+                        google.maps.event.addListener(m, 'click', function() {
+                            var infowindow = new google.maps.InfoWindow({
+                                content: '<div style="overflow: auto;" class=""><img style="float:right" src="'+val.url_thumb+'"><div><a href="jumpprofile.php?id=3242"><b>'+val.username+'</b></a><br><small>'+val.location+'<br>'+val.personal+'</small></div></div>'
+                            });
+                            infowindow.open(map, this);
+                        });
+                        /* $.each(val,function(k,v){
+           //   alert(k+" : "+ v);     
+    });*/
+                    });
+                },
+                error      : function() {
+                    //console.error("error");
+                    // alert('wrong !!');                  
+                }
+            }); 
+        }
+		  function initializeNear(lat,lng) {
+            var latlng = new google.maps.LatLng(lat, lng);
+            var myOptions = {
+                zoom: 8,
+                center: latlng,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            };
+            mapNear = new google.maps.Map(document.getElementById("map_canvas-near"),myOptions);
+				 
+            var point = new google.maps.LatLng(lat, lng);
+            var marker = new google.maps.Marker({
+                position:point,
+                map:mapNear,
+                title:'Hello VTS',
+                draggable:true,
+            });  
+            google.maps.event.addListener(marker, 'click', function() {
+                var infowindow = new google.maps.InfoWindow({
+                    content: '<div style="overflow: auto;" class=""><img style="float:right" src="https://flpics1.a.ssl.fastly.net/49/49905/podcast_home_coochie_20081006212150_60.jpg"><div><a href="jumpprofile.php?id=3242"><b>coochie</b></a><br><small>St. Paul, MN<br>32 F</small></div></div>'
+                });
+                infowindow.open(map, this);
+            });
+            $.ajax({
+                type       : "GET",
+                url        : "http://myplaydar.com/members/api/userlist_get.php",
+                data       : {type : 'loc',latitude : '37.5209666' ,longitude : '-122.2563156',SESSID:$.cookie("SESSID")},
+                dataType   : 'json',
+                success    : function(response) {
+                    var data =JSON.stringify(response.markers);
+                    var json = $.parseJSON(JSON.stringify(response.markers));
+                    $(json).each(function(i,val){
+                        // alert(JSON.stringify(val));
+                        var m = new google.maps.Marker({
+                            position:new google.maps.LatLng(val.latitude, val.longitude),
+                            map:mapNear,
+                            title:val.username,
+                            draggable:true,
+                        });  
+                        google.maps.event.addListener(m, 'click', function() {
+                            var infowindow = new google.maps.InfoWindow({
+                                content: '<div style="overflow: auto;" class=""><img style="float:right" src="'+val.url_thumb+'"><div><a href="jumpprofile.php?id=3242"><b>'+val.username+'</b></a><br><small>'+val.location+'<br>'+val.personal+'</small></div></div>'
+                            });
+                            infowindow.open(mapNear, this);
+                        });
+                        /* $.each(val,function(k,v){
+           //   alert(k+" : "+ v);     
+    });*/
+                    });
+                },
+                error      : function() {
+                    //console.error("error");
+                    // alert('wrong !!');                  
+                }
+            }); 
+        }   
+    </script>	
+
+</html>
+

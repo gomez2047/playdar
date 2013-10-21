@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--
+/**
+ * Appcropolis Template: custom-buttons 
+ * @copy Appcropolis LLC (c) 2012. All rights reserved.
+ * @author Developer's Name (support@appcropolis.com)
+ * @date 2012-09-30
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, 
+ * EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+ * MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+ * NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+ * BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN 
+ * ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN 
+ * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE 
+ * SOFTWARE.
+ *
+ * License and legal information: 
+ *
+ * http://appcropolis.com/license/
+ * http://appcropolis.com/legal/
+ * http://appcropolis.com/privacy/
+ */ -->
+<html>
+    
+    <head>
+        <title>custom-buttons</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="vendors/jquery.mobile/jquery.mobile-1.1.1.min.css"/>
+        <script src="vendors/jquery.mobile/jquery-1.7.1.min.js"></script>
+        <script src="vendors/jquery.mobile/jquery.mobile-1.1.1.min.js"></script>
+        <link rel="stylesheet" href="vendors/appcropolis/app-reset.css" />
+        <link rel="stylesheet" href="resources/css/custom-buttons.css" />
+    </head>
+    
+    <body>	
+    	<!-- back-button -->
+        <div id="custom-buttons" data-role="page"><!-- page -->
+            <div data-role="header" data-position="fixed"><!-- header -->
+                <h1>Custom Buttons</h1>
+                <a href="#" data-role="button" data-theme="reset" class="ios black">Home</a>
+                <a href="#" data-role="button" data-theme="reset" class="ios red">Edit</a>
+                <!-- /header -->
+            </div>
+            <div data-role="content"> <!-- content -->
+                <p>Colors:</p>
+				<!-- iOS Default -->
+				<a href="#another-page"
+				    data-role="button"
+				    data-theme="reset"
+				    class="ios">iOS Default
+				</a>
+
+				<!-- iOS Red -->
+				<a href="#another-page"
+				    data-role="button"
+				    data-theme="reset"
+				    class="ios red">iOS Red
+				</a>
+
+				<!-- iOS Black -->
+				<a href="#another-page"
+				    data-role="button"
+				    data-theme="reset"
+				    class="ios black">iOS Black
+				</a>
+				<!-- iOS Blue -->
+				<a href="#another-page"
+				    data-role="button"
+				    data-theme="reset"
+				    class="ios blue">iOS Blue
+				</a>
+				
+				
+                <p>Badge:</p>
+                <!-- HTML code - iOS Default + badge -->
+				<a href="#another-page"
+				    data-role="button"
+				    data-theme="reset"
+				    class="ios app-btn-new-badge">I have a badge
+				</a>
+            </div><!-- /content -->
+         </div> <!-- /page -->
+    </body>
+
+</html>

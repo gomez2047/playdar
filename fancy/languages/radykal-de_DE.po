@@ -1,0 +1,1372 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Fancy Gallery\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-01-21 20:25+0100\n"
+"PO-Revision-Date: 2013-01-21 20:25+0100\n"
+"Last-Translator: Rafael Dery <webmaster@radykal.de>\n"
+"Language-Team: radykal\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e;_x\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 1.5.4\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+
+#: ../radykal-fancy-gallery.php:238 ../admin/manage-galleries.php:4
+msgid "Manage galleries"
+msgstr "Galerien verwalten"
+
+#: ../radykal-fancy-gallery.php:239 ../admin/options.php:3
+msgid "Options"
+msgstr "Optionen"
+
+#: ../radykal-fancy-gallery.php:400
+#, php-format
+msgid ""
+"<p class=\"fg-error\"><strong>Fancy Gallery Error:</strong><br />No gallery "
+"with the ID %s was found or you have not created albums for it yet.</p>"
+msgstr ""
+"<p class=\"fg-error\"><strong>Fancy Gallery Fehler:</strong><br />Es wurde "
+"keine Galerie mit der ID %s gefunden oder die Galerie enthält keine Alben.</"
+"p>"
+
+#: ../radykal-fancy-gallery.php:461
+msgid ""
+": Could not create the fancygallery folder! Please check the permission. Set "
+"the CHMOD to 755 or 777 for the wp-content folder."
+msgstr ""
+": fancygallery Ordner konnte nicht erstellt werden! Überprüfe bitte "
+"Ordnererlaubnis. Setz die CHMOD auf 755 oder 777 für den wp-content Ordner."
+
+#: ../radykal-fancy-gallery.php:468
+#, php-format
+msgid ""
+"<strong>%s</strong>  is not writable! Please check the permission. Set the "
+"CHMOD to 755 or 777."
+msgstr ""
+"<strong>%s</strong> ist nicht beschreibbar! Überprüfe bitte die "
+"Ordnererlaubnis. Setze die CHMOD auf 755 oder 777."
+
+#: ../radykal-fancy-gallery.php:487
+msgid "Gallery successfully created!"
+msgstr "Galerie erfolgreich erstellt!"
+
+#: ../radykal-fancy-gallery.php:492
+msgid "A new gallery directory could not be created. Please try again!"
+msgstr ""
+"Eine neues Galerieverzeichnis konnte nicht erstellt werden. Bitte versuche "
+"es noch einmal!"
+
+#: ../radykal-fancy-gallery.php:499
+msgid "Database error: A new gallery could not be created!"
+msgstr "Datenbankfehler: Eine neue Galerie konnte nicht erstellt werden!"
+
+#: ../radykal-fancy-gallery.php:518
+msgid "Gallery title successfully changed!"
+msgstr "Galerietitel erfolgreich geändert!"
+
+#: ../radykal-fancy-gallery.php:522
+msgid "Could not rename gallery, please try again!"
+msgstr "Galerie konnte nicht umbenannt werden, bitte versuche es noch einmal!"
+
+#: ../radykal-fancy-gallery.php:546
+msgid "Gallery successfully deleted!"
+msgstr "Galerie erfolgreich gelöscht!"
+
+#: ../radykal-fancy-gallery.php:553
+msgid "Could not delete gallery!"
+msgstr "Galerie konnte nicht gelöscht werden!"
+
+#: ../radykal-fancy-gallery.php:585
+msgid "Album successfully created!"
+msgstr "Album erfolgreich erstellt!"
+
+#: ../radykal-fancy-gallery.php:590
+msgid "An new album directory could not be created. Please try again!"
+msgstr ""
+"Eine neues Albumverzeichnis konnte nicht erstellt werden. Bitte versuche es "
+"noch einmal!"
+
+#: ../radykal-fancy-gallery.php:593
+msgid "Database error: A new album could not be created!"
+msgstr "Datenbankfehler: Ein neues Album konnte nicht erstellt werden!"
+
+#: ../radykal-fancy-gallery.php:615
+msgid "Album title successfully changed!"
+msgstr "Albumtitel erfolgreich geändert!"
+
+#: ../radykal-fancy-gallery.php:620
+msgid "Could not rename album directory!"
+msgstr "Albumverzeichnis konnte nicht geändert werden!"
+
+#: ../radykal-fancy-gallery.php:644
+msgid "Album successfully deleted!"
+msgstr "Album erfolgreich gelöscht!"
+
+#: ../radykal-fancy-gallery.php:650
+msgid "Could not delete album directory!"
+msgstr "Albumverzeichnis konnte nicht gelöscht werden!"
+
+#: ../radykal-fancy-gallery.php:728
+msgid "Album successfully updated!"
+msgstr "Album erfolgreich aktualisiert!"
+
+#: ../radykal-fancy-gallery.php:734
+msgid "Album could not be updated. Please try again!"
+msgstr "Album konnte nicht aktualisiert werden. Bitte versuche es noch einmal!"
+
+#: ../radykal-fancy-gallery.php:776
+msgid "File is not an image"
+msgstr "Datei ist kein Bild"
+
+#: ../radykal-fancy-gallery.php:788
+msgid "Uploaded image is too big"
+msgstr "Hochgeladenes Bild ist zu gross"
+
+#: ../radykal-fancy-gallery.php:798
+msgid "PHP Issue - move_uploaed_file failed"
+msgstr "PHP Problem - move_uploaed_file gescheitert"
+
+#: ../radykal-fancy-gallery.php:1119
+msgid "Add new album"
+msgstr "Neues Album hinzufügen"
+
+#: ../radykal-fancy-gallery.php:1119
+msgid "Edit gallery title"
+msgstr "Galerietitel ändern"
+
+#: ../radykal-fancy-gallery.php:1119 ../radykal-fancy-gallery.php:1123
+msgid "Show Shortcode"
+msgstr "Zeige Shortcode"
+
+#: ../radykal-fancy-gallery.php:1119
+msgid "Delete gallery"
+msgstr "Galerie löschen"
+
+#: ../radykal-fancy-gallery.php:1123
+msgid "Edit album title"
+msgstr "Albumtitel bearbeiten"
+
+#: ../radykal-fancy-gallery.php:1123
+msgid "Delete album"
+msgstr "Album löschen"
+
+#: ../widgets.php:14
+msgid ""
+"Creates a list of all albums from a gallery. The links refers to the page "
+"where the gallery is included and will open the selected album."
+msgstr ""
+"Erstellt eine Liste mit den Alben einer Galerie. Die Links verweisen auf die "
+"Seite, die die Galerie enthält und öffnet das ausgewählte Album."
+
+#: ../widgets.php:17
+msgid "Fancy Gallery - List albums of gallery"
+msgstr "Fancy Gallery - Liste Alben einer Galerie"
+
+#: ../widgets.php:41
+msgid ""
+"<p>There is no published post that has this gallery included! Please add the "
+"gallery in a published post or page first!</p>"
+msgstr ""
+"<p>Es existiert kein öffentlicher Beitrag der diese Galerie enthält! Bitte "
+"füge die Galerie einem öffentlichen Beitrag oder Seite hinzu!</p>"
+
+#: ../widgets.php:69 ../widgets.php:183 ../widgets.php:312
+msgid "Title:"
+msgstr "Titel:"
+
+#: ../widgets.php:72
+msgid "Select a gallery:"
+msgstr "Wähle eine Galerie:"
+
+#: ../widgets.php:107
+msgid ""
+"Displays the media of an album. You should create an own gallery for this "
+"album and adjust the options for the gallery."
+msgstr ""
+"Zeigt die Medien eines Albums. Du solltest eine Galerie für dieses Album "
+"erstellen und die Optionen für diese Galerie anpassen."
+
+#: ../widgets.php:110
+msgid "Fancy Gallery - Album Display"
+msgstr "Fancy Gallery - Albumanzeige"
+
+#: ../widgets.php:157
+msgid "<p>Please choice options for this gallery in the widget admin!</p>"
+msgstr "<p>Bitte wähle Optionen für diese Galerie im Widget Admin!</p>"
+
+#: ../widgets.php:188
+msgid "Select the album, you would like to display:"
+msgstr "Wähle das Album, das du gerne anzeigen möchtest:"
+
+#: ../widgets.php:197 ../widgets.php:317
+msgid "Take options from gallery:"
+msgstr "Nehme die Optionen der Galerie:"
+
+#: ../widgets.php:234
+msgid "Displays latest or random media."
+msgstr "Zeigt die letzten oder zufälligen Medien."
+
+#: ../widgets.php:237
+msgid "Fancy Gallery - Media Display"
+msgstr "Fancy Gallery - Media-Anzeige"
+
+#: ../widgets.php:326
+msgid "Number of media to show:"
+msgstr "Die Anzahl der gezeigten Medien:"
+
+#: ../widgets.php:332
+msgid "Latest"
+msgstr "Neuesten"
+
+#: ../widgets.php:333 ../admin/options-form.php:136
+msgid "Random"
+msgstr "Zufällig"
+
+#: ../admin/generate-code.php:2
+msgid "Your HTML Code"
+msgstr "Dein HTML Code"
+
+#: ../admin/generate-code.php:68
+msgid "Copy this code and paste it in your body tag:"
+msgstr "Kopiere diesen Code und füge in den body Bereich ein:"
+
+#: ../admin/manage-galleries.php:10 ../admin/options.php:8
+msgid "Galleries"
+msgstr "Galerien"
+
+#: ../admin/manage-galleries.php:13
+msgid "Add Gallery"
+msgstr "Galerie hinzufügen"
+
+#: ../admin/manage-galleries.php:35
+msgid "Get instructions and hints in the documentation!"
+msgstr "Erhalte Instruktionen und Tipps in der Dokumentation!"
+
+#: ../admin/manage-galleries.php:45
+msgid "Upload Images"
+msgstr "Bilder hochladen"
+
+#: ../admin/manage-galleries.php:45
+msgid ""
+"Multiple image selection is only supported in following browsers: "
+"<strong>Firefox 3.6+, Safari 5+, Google Chrome and Opera 11+.</strong><br /> "
+"Use CTRL or SHIFT for selecting multiple images. Maximum upload size for "
+"every image is 1MB."
+msgstr ""
+"Mehrfache Bilderauswahl wird nur in folgenden Browsern unterstützt: "
+"<strong>Firefox 3.6+, Safari 5+, Google Chrome and Opera 11+.</strong><br /> "
+"Benutze STRG oder SHIFT um mehrere Bilder auszuwählen. Maximale Uploadgrösse "
+"ist 1MB für jedes Bild."
+
+#: ../admin/manage-galleries.php:50
+msgid "Upload other media"
+msgstr "Anderes Medium hochladen"
+
+#: ../admin/manage-galleries.php:50
+msgid ""
+"You can only upload one media after another. This could be a Video"
+"(Quicktime, Youtube, Vimeo or Flash), an external site and more. "
+"<strong>Check out the documentation to get an overview which media types are "
+"supported in the different lightboxes!</strong>"
+msgstr ""
+"Du kannst nur ein Medium nach dem anderen hochladen. Das könnte ein Video"
+"(Quicktime, Youtube, Vimeo or Flash), eine externe Seite oder mehr sein. "
+"<strong> Liess dafür die Dokumentation um zu erfahren welche Medientypen in "
+"den unterschiedlichen Lightboxes unterstützt werden!</strong>"
+
+#: ../admin/manage-galleries.php:53
+msgid "Get titles from filenames"
+msgstr "Setze Titel aus Dateinamen"
+
+#: ../admin/manage-galleries.php:59 ../admin/options.php:28
+msgid "Save Changes"
+msgstr "Änderungen übernehmen"
+
+#: ../admin/manage-galleries.php:60
+msgid "Select all media"
+msgstr "Wähle alle Medien aus"
+
+#: ../admin/manage-galleries.php:60
+msgid "Select all"
+msgstr "Wähle alle aus"
+
+#: ../admin/manage-galleries.php:61
+msgid "Deselect all media"
+msgstr "All Medien deselektieren"
+
+#: ../admin/manage-galleries.php:61
+msgid "Deselect all"
+msgstr "Deselektiere Alle"
+
+#: ../admin/manage-galleries.php:62
+msgid "Delete selected media"
+msgstr "Lösche ausgewählte Medien"
+
+#: ../admin/manage-galleries.php:62
+msgid "Delete"
+msgstr "Löschen"
+
+#: ../admin/options-form.php:5 ../admin/options-form.php:297
+msgid "Option"
+msgstr "Option"
+
+#: ../admin/options-form.php:6 ../admin/options-form.php:298
+msgid "Value"
+msgstr "Wert"
+
+#: ../admin/options-form.php:7 ../admin/options-form.php:299
+msgid "Explanation"
+msgstr "Erklärung"
+
+#: ../admin/options-form.php:12
+msgid "Background Color"
+msgstr "Hintergrundfarbe"
+
+#: ../admin/options-form.php:16
+msgid "The color for the background of the thumbnails."
+msgstr "Die Farbe für den Hintergrund der Thumbnails."
+
+#: ../admin/options-form.php:19
+msgid "Title Color"
+msgstr "Titelfarbe"
+
+#: ../admin/options-form.php:23
+#, fuzzy
+msgid "The color for the titles, that appears under the thumbnail."
+msgstr "Die Farbe für die Titel, die unter den Thumbnails erscheinen."
+
+#: ../admin/options-form.php:26
+msgid "Thumbnail Width"
+msgstr "Vorschaubildbreite"
+
+#: ../admin/options-form.php:28
+msgid "The max. width for every thumbnail."
+msgstr "Die max. Breite für jedes Vorschaubild."
+
+#: ../admin/options-form.php:31
+msgid "Thumbnail Height"
+msgstr "Vorschaubildgrösse"
+
+#: ../admin/options-form.php:33
+msgid "The max. height for every thumbnail."
+msgstr "Die max. Höhe für jedes Vorschaubild."
+
+#: ../admin/options-form.php:36
+msgid "Thumbnail Opacity"
+msgstr "Vorschaubilddeckkraft"
+
+#: ../admin/options-form.php:38
+msgid "A value between 0-1, e.g. 0.4"
+msgstr "Ein Wert zwischen 0-1, z.B. 0.4"
+
+#: ../admin/options-form.php:41
+msgid "Thumbnails per Page"
+msgstr "Vorschaubilder pro Seite"
+
+#: ../admin/options-form.php:43
+msgid "Set value to 0 to show all images of album at once."
+msgstr "Setze den Wert auf 0 um alle Bilder eines Albums anzuzeigen."
+
+#: ../admin/options-form.php:46
+msgid "Title Height"
+msgstr "Titelhöhe"
+
+#: ../admin/options-form.php:48
+msgid "the height of the layer for the title."
+msgstr "Die Höhe für die Titelebene."
+
+#: ../admin/options-form.php:51
+msgid "Border thickness"
+msgstr "Rahmenbreite"
+
+#: ../admin/options-form.php:53
+msgid "the thickness of the border around each thumbnail container."
+msgstr "The Rahmenbreite für jedes Vorschaubild."
+
+#: ../admin/options-form.php:56
+msgid "Row Offset"
+msgstr "Reihenabstand"
+
+#: ../admin/options-form.php:58
+msgid "the offset between each thumbnail row."
+msgstr "Der Abstand zwischen jeder Vorschaubildreihe."
+
+#: ../admin/options-form.php:61
+msgid "Column Offset"
+msgstr "Spaltenabstand"
+
+#: ../admin/options-form.php:63
+msgid "the offset between each thumbnail column."
+msgstr "Der Abstand zwischen jeder Vorschaubildspalte."
+
+#: ../admin/options-form.php:66
+msgid "Shadow Offset"
+msgstr "Schattenabstand"
+
+#: ../admin/options-form.php:68
+msgid "You can use negative values as well."
+msgstr "Du kannst auch negative Werte verwenden."
+
+#: ../admin/options-form.php:71
+msgid "Shadow Image"
+msgstr "Bild für den Schatten"
+
+#: ../admin/options-form.php:73 ../admin/options-form.php:85
+msgid "Upload"
+msgstr "Hochladen"
+
+#: ../admin/options-form.php:74 ../admin/options-form.php:86
+msgid "Remove"
+msgstr "Entfernen"
+
+#: ../admin/options-form.php:79
+msgid "Upload a shadow png that appears under the thumbnail box."
+msgstr "Lade eine Schatten png hoch, die unter dem Vorschaubild erscheint."
+
+#: ../admin/options-form.php:83
+msgid "Hover Image"
+msgstr "Hover Bild"
+
+#: ../admin/options-form.php:91
+msgid ""
+"Upload a hover icon png that appears over the thumbnail when moving the "
+"mouse over it."
+msgstr ""
+"Lade ein Hover Icon hoch, das über dem Vorschaubild erscheint sobald du "
+"deine Maus darüber bewegst."
+
+#: ../admin/options-form.php:95
+msgid "Hover Image Effect"
+msgstr "Hover Bild Effekt"
+
+#: ../admin/options-form.php:98
+msgid "Fade"
+msgstr "Abblenden"
+
+#: ../admin/options-form.php:99
+msgid "Left to Right"
+msgstr "Links nach rechts"
+
+#: ../admin/options-form.php:100
+msgid "Right to Left"
+msgstr "Rechts nach Links"
+
+#: ../admin/options-form.php:101
+msgid "Top to Bottom"
+msgstr "Oben nach unten "
+
+#: ../admin/options-form.php:102
+msgid "Bottom to Top"
+msgstr "Unten nach oben"
+
+#: ../admin/options-form.php:105
+msgid "Select an effect for the hover image."
+msgstr "Wähle einen Effekt für das Hover Bild."
+
+#: ../admin/options-form.php:108
+msgid "Thumbnail Scale Mode"
+msgstr "Vorschaubildskalierung"
+
+#: ../admin/options-form.php:113
+msgid "Stretch"
+msgstr "Ausdehnen"
+
+#: ../admin/options-form.php:114
+msgid "Proportional"
+msgstr "Proportional"
+
+#: ../admin/options-form.php:115
+msgid "Crop"
+msgstr "Beschneiden"
+
+#: ../admin/options-form.php:120
+msgid "No Cropping"
+msgstr "Keine Beschneidung"
+
+#: ../admin/options-form.php:121
+msgid "Best Fit (recommend)"
+msgstr "Beste Anpassung (empfohlen)"
+
+#: ../admin/options-form.php:122
+msgid "Proportional (gaps)"
+msgstr "Proportional (Aussparung)"
+
+#: ../admin/options-form.php:123
+msgid "Proportional (no gaps)"
+msgstr "Proportional (Keine Aussparung)"
+
+#: ../admin/options-form.php:128
+msgid "Select a scale mode how the thumbnails should be scaled."
+msgstr "Wähle eine Skalierung wie die Vorschaubilder skaliert werden sollen."
+
+#: ../admin/options-form.php:131
+msgid "Text Fade Direction"
+msgstr "Textabblendrichtung"
+
+#: ../admin/options-form.php:134
+msgid "Normal"
+msgstr "Normal"
+
+#: ../admin/options-form.php:135
+msgid "Reverse"
+msgstr "Rückwärts"
+
+#: ../admin/options-form.php:139
+msgid "Select the direction for the letters fading of the title."
+msgstr "Wähle eine Richtung für die Buchstabenausblendung des Titels."
+
+#: ../admin/options-form.php:142
+msgid "Dropdown theme"
+msgstr "Dropdown Theme"
+
+#: ../admin/options-form.php:145
+msgid "White"
+msgstr "Weiss"
+
+#: ../admin/options-form.php:146
+msgid "Black"
+msgstr "Schwarz"
+
+#: ../admin/options-form.php:147
+msgid "Blue"
+msgstr "Blau"
+
+#: ../admin/options-form.php:150
+msgid "Select a theme for the dropdown menu."
+msgstr "Wähle ein Theme für das Dropdown-Menü."
+
+#: ../admin/options-form.php:153
+msgid "Show Dropdown"
+msgstr "Zeige Dropdown"
+
+#: ../admin/options-form.php:155
+msgid "Hide or show the dropdown menu."
+msgstr "Verstecke oder zeige das Dropdown-Menü."
+
+#: ../admin/options-form.php:158
+msgid "Show Divider"
+msgstr "Zeige Querbalken"
+
+#: ../admin/options-form.php:160
+msgid "Hide or show the line between thumbnails and controllers."
+msgstr ""
+"Verstecke oder zeige die Linie zwischen Vorschaubilder und Album Selektion."
+
+#: ../admin/options-form.php:163
+msgid "Show Title"
+msgstr "Zeige Titel"
+
+#: ../admin/options-form.php:165
+msgid "Show or hide the title."
+msgstr "Zeige oder verstecke den Titel"
+
+#: ../admin/options-form.php:168
+msgid "Slide Title"
+msgstr "Slide Titel"
+
+#: ../admin/options-form.php:170
+msgid "Enable or disable the slide of the Title."
+msgstr "Aktiviere oder deaktiviere den Slide für den Titel."
+
+#: ../admin/options-form.php:173
+msgid "Inverse Hover Effect"
+msgstr "Invertiere den Hover Effekt"
+
+#: ../admin/options-form.php:175
+msgid ""
+"All images are clear and by hover the thumbnail will get the thumbnail "
+"opacity."
+msgstr ""
+"Alle Bilder sind klar und bei Hover bekommt das Vorschaubild die "
+"Vorschaubilddeckkraft."
+
+#: ../admin/options-form.php:178
+msgid "Second Thumbnail"
+msgstr "Zweites Vorschaubild"
+
+#: ../admin/options-form.php:180
+msgid ""
+"Creates a second thumbnail over the origin thumbnail, that can be "
+"manipulated with the Timthumb Parameters."
+msgstr ""
+"Erstellt ein zweites Vorschaubild über dem ursprünglichen Vorschaubild, "
+"welches mit Timthumb Parameters manipuliert werden kann."
+
+#: ../admin/options-form.php:183
+msgid "Timthumb Parameters for the second thumbnail"
+msgstr "Timthumb Parameters für das zweite Vorschaubild"
+
+#: ../admin/options-form.php:185
+msgid ""
+"The timthumb parameters to manipulate the second thumbnails, <a href="
+"\"http://www.binarymoon.co.uk/2010/08/timthumb-image-filters/\" target="
+"\"_blank\">learn more about the timthumb image filters</a>. By default it "
+"turns all second thumbnails into shades of grey."
+msgstr ""
+"Die Timthumb Parameter um das zweite Vorschaubild zu manipulieren, <a href="
+"\"http://www.binarymoon.co.uk/2010/08/timthumb-image-filters/\" target="
+"\"_blank\">lerne mehr über die Timthumb Bildfilter</a>. Standardmässig "
+"werden alle zweiten Vorschaubildern in ein Graustufenbild umgewandelt."
+
+#: ../admin/options-form.php:188
+msgid "All media selector"
+msgstr "Alle Medien Auswähler"
+
+#: ../admin/options-form.php:190
+msgid ""
+"Set the text for the button to show all media of a gallery. Leave it empty, "
+"when you do not need this button."
+msgstr ""
+"Setze den Text für den Button um alle Medien einer Galerie zu zeigen. Lass "
+"es frei, wenn du diesen Button nicht benötigst."
+
+#: ../admin/options-form.php:193
+msgid "Album Selection"
+msgstr "Albumauswahl"
+
+#: ../admin/options-form.php:201
+msgid "The selection type for the albums."
+msgstr "Der Auswahltyp für die Alben."
+
+#: ../admin/options-form.php:204
+msgid "Navigation"
+msgstr "Navigation"
+
+#: ../admin/options-form.php:212
+msgid "The navigation type."
+msgstr "Der Navigationstyp."
+
+#: ../admin/options-form.php:215
+msgid "Navigation Position"
+msgstr "Navigation Position"
+
+#: ../admin/options-form.php:218
+msgid "Top"
+msgstr "Oben"
+
+#: ../admin/options-form.php:219
+msgid "Bottom"
+msgstr "Unten"
+
+#: ../admin/options-form.php:222
+msgid "Select the position of the navigation."
+msgstr "Wähle die Position für die Navigation."
+
+#: ../admin/options-form.php:225
+msgid "Navigation Style"
+msgstr "Navigationstil"
+
+#: ../admin/options-form.php:227
+msgid ""
+"The color scheme of the navigation. Choice between \"white\", \"black\" or a "
+"custom CSS class."
+msgstr ""
+"Das Farbschema für die Navigation. Wähle zwischen \"white\", \"black\" oder "
+"einer eigenen CSS Klasse. "
+
+#: ../admin/options-form.php:230
+msgid "Navigation Alignment"
+msgstr "Navigationausrichtung"
+
+#: ../admin/options-form.php:238
+msgid "The navigation alignment."
+msgstr "Die Ausrichtung für die Navigation."
+
+#: ../admin/options-form.php:241
+msgid "Navigation Previous Button Text"
+msgstr "Navigation Zurück-Button Text"
+
+#: ../admin/options-form.php:243
+msgid "The text for the previous button of the naviagtion."
+msgstr "Der Text für den Zurück-Button der Navigation."
+
+#: ../admin/options-form.php:246
+msgid "Navigation Next Button Text"
+msgstr "Navigation Vor-Button Text"
+
+#: ../admin/options-form.php:248
+msgid "The text for the next button of the naviagtion."
+msgstr "Der Text für den Vor-Button der Navigation."
+
+#: ../admin/options-form.php:251
+msgid "\"Back to albums\" Button Text"
+msgstr "\"Zurück zu den Alben\" Button Text"
+
+#: ../admin/options-form.php:253
+msgid "The text for the \"back to album overview\" button of the naviagtion."
+msgstr "Der Text für den \"Zurück-zur-Albumübersicht\" Button der Navigation."
+
+#: ../admin/options-form.php:256
+msgid "Thumbnail transition"
+msgstr "Vorschaubildübergang"
+
+#: ../admin/options-form.php:263
+msgid "The type of the thumbnail transition."
+msgstr "Der Typ für den Vorschaubildübergang."
+
+#: ../admin/options-form.php:266
+msgid "Lightbox"
+msgstr "Lightbox"
+
+#: ../admin/options-form.php:271
+msgid ""
+"The type of lightbox. You can choice between <a href=\"http://www.no-margin-"
+"for-errors.com/projects/prettyphoto-jquery-lightbox-clone/\" target=\"_blank"
+"\">prettyphoto</a> and <a href=\"http://www.fancyapps.com/fancybox/\" target="
+"\"_blank\">fancybox</a>. Please note, when using fancybox and you have a "
+"commercial website, you need to buy a <a href=\"http://www.fancyapps.com/"
+"fancybox/#license\" target=\"_blank\">license for FancyBox</a>."
+msgstr ""
+"Der Lightboxtyp. Du kannst zwischen <a href=\"http://www.no-margin-for-"
+"errors.com/projects/prettyphoto-jquery-lightbox-clone/\" target=\"_blank"
+"\">prettyphoto</a> und <a href=\"http://www.fancyapps.com/fancybox/\" target="
+"\"_blank\">fancybox</a> auswählen. Bitte beachte, wenn du fancybox benutzt "
+"und eine kommerzielle Website betreibst, dann musst du eine <a href=\"http://"
+"www.fancyapps.com/fancybox/#license\" target=\"_blank\">Lizenz für fancybox "
+"kaufen</a>."
+
+#: ../admin/options-form.php:274
+msgid "Number of columns"
+msgstr "Anzahl der Spalten"
+
+#: ../admin/options-form.php:276
+msgid "The number of columns."
+msgstr "Die Anzahl der Spalten."
+
+#: ../admin/options-form.php:279
+msgid "Media label"
+msgstr "Mediabezeichner"
+
+#: ../admin/options-form.php:281
+msgid "The media label when using Thumbnails as album selection."
+msgstr "Der Mediabezeichner wenn du Thumbnails als Albumselektion wählst."
+
+#: ../admin/options-form.php:284
+msgid "Show only first thumbnail of an album"
+msgstr "Zeige nur den ersten Thumbnail von einem Album"
+
+#: ../admin/options-form.php:286
+msgid ""
+"This will only show the first thumbnail of an album. Use this if you want to "
+"show a whole gallery in the lightbox from just one thumbnail."
+msgstr ""
+"Es wird nur der erste Thumbnail eines Albums angezeigt. Nutze dies wenn du "
+"eine komplette Galerie in der Lightbox von einem Thumbnail öffnen möchtest."
+
+#: ../admin/options-form.php:304
+msgid "Theme"
+msgstr "Theme"
+
+#: ../admin/options-form.php:315
+msgid "Select a theme for the prettyphoto modal box."
+msgstr "Wähle eine Theme für die prettyphoto Modalbox."
+
+#: ../admin/options-form.php:318
+msgid "Enable overlay gallery"
+msgstr "Aktiviere Overlaygalerie"
+
+#: ../admin/options-form.php:320
+msgid "Hide or show the overlay gallery."
+msgstr "Verstecke oder zeige die Overlaygalerie."
+
+#: ../admin/options-form.php:323
+msgid "Allow image resizing"
+msgstr "Erlaube Bildgrössenanpassung"
+
+#: ../admin/options-form.php:325
+msgid "Allow to resize the image so it fits in the browser window."
+msgstr ""
+"Erlaube die Grösse des Bildes anzupassen damit es ins Browserfenster passt."
+
+#: ../admin/options-form.php:328
+msgid "Autoplay slideshow"
+msgstr "Autoplay Slideshow"
+
+#: ../admin/options-form.php:330
+msgid "Enable or disable the autoplay for the slideshow."
+msgstr "Aktiviere oder deaktiviere Autoplay für die Slideshow."
+
+#: ../admin/options-form.php:333
+msgid "Deeplinking"
+msgstr "Deeplinking"
+
+#: ../admin/options-form.php:335
+msgid ""
+"Enable or disable the deeplinking for every media.<strong>This is required "
+"for the social buttons!</strong>"
+msgstr ""
+"Aktiviere Deeplinking für jedes Medium. <strong>Notwendig für die sozialen "
+"Buttons!</strong>"
+
+#: ../admin/options-form.php:338
+msgid "Social Buttons"
+msgstr "Soziale Buttons"
+
+#: ../admin/options-form.php:340
+msgid "Enable or disable the social buttons."
+msgstr "Aktiviere die sozialen Buttons."
+
+#: ../admin/options-form.php:345
+msgid "Width"
+msgstr "Breite"
+
+#: ../admin/options-form.php:347
+msgid "Default width for \"iframe\" and \"swf\" content."
+msgstr "Standardmässige Breite für \"iframe\" und \"swf\" Inhalte."
+
+#: ../admin/options-form.php:350
+msgid "Height"
+msgstr "Höhe"
+
+#: ../admin/options-form.php:352
+msgid "Default height for \"iframe\" and \"swf\" content."
+msgstr "Standardmässige Höhe für \"iframe\" und \"swf\" Inhalte."
+
+#: ../admin/options-form.php:355
+msgid "Autoplay"
+msgstr "Autoplay"
+
+#: ../admin/options-form.php:357
+msgid "If checked, slideshow will start after opening the first gallery item."
+msgstr ""
+"Wenn abgehakt, wird die Slideshow beim Öffnen des ersten Galerieelementes "
+"starten."
+
+#: ../admin/options-form.php:360
+msgid "Arrows"
+msgstr "Pfeile"
+
+#: ../admin/options-form.php:362
+msgid "If checked, navigation arrows will be displayed."
+msgstr "Wenn abgehakt, werden die Navigationspfeile angezeigt."
+
+#: ../admin/options-form.php:365
+msgid "Loop"
+msgstr "Schleife"
+
+#: ../admin/options-form.php:367
+msgid ""
+"If checked, enables cyclic navigation. This means, if you click \"next\" "
+"after you reach the last element, first element will be displayed (and vice "
+"versa)."
+msgstr ""
+"Wenn abgehakt, aktiviert die zyklische Navigation. Das bedeutet, wenn du auf "
+"\"next\" bei Erreichen des letzten Elements klickst, wird das erste Element "
+"angezeigt (und vice versa)."
+
+#: ../admin/options-form.php:370
+msgid "Title Position"
+msgstr "Titelposition"
+
+#: ../admin/options-form.php:379
+msgid "The position of the title."
+msgstr "Die Position des Titels."
+
+#: ../admin/options-form.php:382
+msgid "Button Helpers Position"
+msgstr "Buttonhelfer-Position"
+
+#: ../admin/options-form.php:390
+msgid "The position of the button helpers."
+msgstr "Die Position der Buttonhelfer."
+
+#: ../admin/options-form.php:393
+msgid "Thumbnail Helpers Position"
+msgstr "Vorschaubildhelfer-Position"
+
+#: ../admin/options-form.php:401
+msgid "The position of the thumbnails helpers."
+msgstr "Die Position der Vorschaubilderhelfer."
+
+#: ../admin/options.php:15
+msgid "Paste current showing options to this gallery"
+msgstr "Füge die aktuellgezeigten Optionen zu dieser Galerie hinzu."
+
+#: ../admin/options.php:28
+msgid "Save Options Changes"
+msgstr "Optionenänderungen übernehmen"
+
+#: ../admin/options.php:29
+msgid "Reset Options"
+msgstr "Optionen zurücksetzen"
+
+#: ../admin/options.php:29
+msgid "Reset Options for this gallery"
+msgstr "Optionen für diese Galerie zurücksetzen"
+
+#: ../admin/options.php:30
+msgid "Generate Code"
+msgstr "Erstelle Code"
+
+#: ../admin/options.php:30
+msgid "Generate code for external usage"
+msgstr "Erstelle Code für externen Gebrauch"
+
+#~ msgid "Dark"
+#~ msgstr "Dunkel"
+
+#~ msgid ""
+#~ "To change the color you need to click the small icon at the bottom right "
+#~ "in the colorpicker."
+#~ msgstr ""
+#~ "Um die Farbe zu ändern musst du auf das kleine Icon untenrechts im "
+#~ "Colorpicker klicken."
+
+#~ msgid ""
+#~ "A gallery with the same title already exists. Please choice another title!"
+#~ msgstr ""
+#~ "Ein Galerie mit dem selben Titel existiert bereits. Bitte verwende einen "
+#~ "anderen Titel!"
+
+#~ msgid ""
+#~ "An album with the same title already exists. Please choice another title!"
+#~ msgstr ""
+#~ "Ein Album mit dem selben Titel existiert bereits. Bitte wähle einen "
+#~ "anderen Titel!"
+
+#~ msgid ""
+#~ "An album with the same title in the gallery already exists. Please rename "
+#~ "the album title!"
+#~ msgstr ""
+#~ "Ein Album mit dem selben Titel existiert bereits in der Galerie. Bitte "
+#~ "wähle einen anderen Titel!"
+
+#~ msgid "Album directory does not exist!"
+#~ msgstr "Albumverzeichnis existiert nicht!"
+
+#, fuzzy
+#~ msgid "Arrows Position"
+#~ msgstr "Positionen"
+
+#~ msgid "Tracks"
+#~ msgstr "Tracks"
+
+#~ msgid "Track"
+#~ msgstr "Track"
+
+#~ msgid "Add New"
+#~ msgstr "Erstellen"
+
+#~ msgid "Add New Track"
+#~ msgstr "Neuen Track erstellen"
+
+#~ msgid "Edit Track"
+#~ msgstr "Track bearbeiten"
+
+#~ msgid "New Track"
+#~ msgstr "Neuer Track"
+
+#~ msgid "All Tracks"
+#~ msgstr "Alle Tracks"
+
+#~ msgid "View Track"
+#~ msgstr "Track ansehen"
+
+#~ msgid "Search Tracks"
+#~ msgstr "Tracks suchen"
+
+#~ msgid "No Tracks found"
+#~ msgstr "Keine Tracks gefunden"
+
+#~ msgid "No Tracks found in Trash"
+#~ msgstr "Keine Tracks im Papierkorb gefunden"
+
+#~ msgid "Playlists"
+#~ msgstr "Playlists"
+
+#~ msgid "Playlist"
+#~ msgstr "Playlist"
+
+#~ msgid "Search Playlists"
+#~ msgstr "Playlists suchen"
+
+#~ msgid "All Playlists"
+#~ msgstr "Alle Playlists"
+
+#~ msgid "Parent Playlist"
+#~ msgstr "Übergeordnete Playlist"
+
+#~ msgid "Parent Playlist:"
+#~ msgstr "Übergeordnete Playlist:"
+
+#~ msgid "Update Playlist"
+#~ msgstr "Playlist aktualisieren"
+
+#~ msgid "New Playlist Name"
+#~ msgstr "Neuer Playlist Name"
+
+#~ msgid "Always save before switching to another tab!"
+#~ msgstr "Immer abspeichern bevor du einen neuen Reiter auswählst!"
+
+#~ msgid ""
+#~ "Check out <a href=\"http://dj-templates.com\" target=\"_blank\">dj-"
+#~ "templates.com</a> for more items for Djs and Producer. Follow me at <a "
+#~ "href=\"http://www.facebook.com/pages/dj-templatescom/163102803744768\" "
+#~ "target=\"_blank\">Facebook</a> and <a href=\"http://twitter.com/#!/"
+#~ "djtemplates\" target=\"_blank\">Twitter</a> for new products, updates and "
+#~ "news!"
+#~ msgstr ""
+#~ "Schau dir <a href=\"http://dj-templates.com\" target=\"_blank\">dj-"
+#~ "templates.com</a> , um mehr Produkte für Djs und Produzenten zu finden. "
+#~ "Folge mir auf <a href=\"http://www.facebook.com/pages/dj-"
+#~ "templatescom/163102803744768\" target=\"_blank\">Facebook</a> und <a href="
+#~ "\"http://twitter.com/#!/djtemplates\" target=\"_blank\">Twitter</a> für "
+#~ "neue Produkte, Updates und Neuigkeiten!"
+
+#~ msgid "Track URL & Referral Link"
+#~ msgstr "Track URL & Verweisungslink"
+
+#~ msgid "Fullwidth Audio Player - Your Playlists"
+#~ msgstr "Fullwidth Audio Player - Deine Playlists"
+
+#~ msgid ""
+#~ "<strong>Required</strong> - Set here the URL of the MP3 or the Soundcloud "
+#~ "track(s):"
+#~ msgstr ""
+#~ "<strong>Erforderlich</strong> - Gebe hier die URL der MP3 Datei oder der "
+#~ "Soundcloud Track(s) ein:"
+
+#~ msgid ""
+#~ "<strong>Optional</strong> - Set here the referral link that should be "
+#~ "shared on facebook and twitter:"
+#~ msgstr ""
+#~ "<strong>Optional</strong> - Gebe hier den Verweisungslink ein, der auf "
+#~ "Facebook und Twitter geteilt wird:"
+
+#~ msgid ""
+#~ "Here you can add a playlist to your page or change the default playlist "
+#~ "for the player."
+#~ msgstr ""
+#~ "Hier kannst du eine Playlist in deine Seite einfügen oder die Standard-"
+#~ "Playlist für den Player ändern."
+
+#~ msgid "2.1 Add a playlist to this page"
+#~ msgstr "2.1 Eine Playlist zu dieser Seite hinzufügen"
+
+#~ msgid "Choice a layout:"
+#~ msgstr "Wähle eine Playlist:"
+
+#~ msgid "Enqueue playlist into the player"
+#~ msgstr "Reihe Playlist in den Player ein"
+
+#~ msgid ""
+#~ "Set a text for the playlist play button. If you do not want this button, "
+#~ "just leave it empty:"
+#~ msgstr ""
+#~ "Schreibe ein Text für den Playlist Play Button. Wenn du diesen Button "
+#~ "nicht möchtest, dann lass es einfach leer:"
+
+#~ msgid "Add Playlist"
+#~ msgstr "Playlist hinzufügen"
+
+#~ msgid "2.2 Change the default playlist for this page"
+#~ msgstr "2.2 Die standardmässige Playlist für diese Seite ändern"
+
+#~ msgid "Change Default Playlist"
+#~ msgstr "Standard-Playlist ändern"
+
+#~ msgid "Date"
+#~ msgstr "Datum"
+
+#~ msgid "Default Playlist"
+#~ msgstr "Standard-Playlist"
+
+#~ msgid ""
+#~ "Select a default playlist that should be loaded into the player from "
+#~ "beginning."
+#~ msgstr ""
+#~ "Wähle eine Standard-Playlist welche von Anfang in den Player "
+#~ "hineingeladen wird."
+
+#~ msgid "Wrapper"
+#~ msgstr "Hülle"
+
+#~ msgid "Pop-Up"
+#~ msgstr "Pop-Up"
+
+#~ msgid "Player"
+#~ msgstr "Player"
+
+#~ msgid "Left"
+#~ msgstr "Links"
+
+#~ msgid "Center"
+#~ msgstr "Zentriert"
+
+#~ msgid "Colors"
+#~ msgstr "Farben"
+
+#~ msgid "The background color of the wrapper"
+#~ msgstr "Die Hintergrundfarbe von der Hülle"
+
+#~ msgid "Main"
+#~ msgstr "Hauptfarbe"
+
+#~ msgid "The main color for signs and title"
+#~ msgstr "Die Hauptfarbe für Grafiken und die Titel"
+
+#~ msgid "Graphics Fill"
+#~ msgstr "Füllfarbe der Grafiken"
+
+#~ msgid "The background fill color of the graphics"
+#~ msgstr "Die Hintergrundfarbe für alle Grafiken"
+
+#~ msgid "Graphics Fill Hover"
+#~ msgstr "Füllfarbe der Grafiken bei Hover"
+
+#~ msgid "The background fill color when you move your mouse over it."
+#~ msgstr "Die Hintergrundfarbe wenn du deine Maus über das Element bewegst."
+
+#~ msgid "Meta"
+#~ msgstr "Meta"
+
+#~ msgid "The meta color (Text under title)"
+#~ msgstr "Die Metafarbe (Text unter dem Titel)"
+
+#~ msgid "Stroke"
+#~ msgstr "Rahmen"
+
+#~ msgid "The stroke color"
+#~ msgstr "Die Rahmenfarbe"
+
+#~ msgid "Active Track in Playlist"
+#~ msgstr "Aktueller Track in der Playlist"
+
+#~ msgid "The background color for the current selected track in the playlist"
+#~ msgstr "Die Hintergrundfarbe für den aktuellen Track in der Playlist"
+
+#~ msgid "Dimensions"
+#~ msgstr "Dimensionen"
+
+#~ msgid "Cover Height"
+#~ msgstr "Coverhöhe"
+
+#~ msgid "Offset between playlist and player"
+#~ msgstr "Abstand zwischen Playlist und Player"
+
+#~ msgid "Labels"
+#~ msgstr "Bezeichner"
+
+#~ msgid "Facebook Link"
+#~ msgstr "Facebook Link"
+
+#~ msgid "Twitter Link"
+#~ msgstr "Twitter Link"
+
+#~ msgid "Soundcloud Link"
+#~ msgstr "Soundcloud Link"
+
+#~ msgid "Download Link (only for soundcloud tracks)"
+#~ msgstr "Download Link (nur bei Soundcloud Tracks)"
+
+#~ msgid "Activations"
+#~ msgstr "Aktivierungen"
+
+#~ msgid "Opened"
+#~ msgstr "Geöffnet"
+
+#~ msgid "Open player by default"
+#~ msgstr "Öffne Player von Anfang an"
+
+#~ msgid "Volume Button"
+#~ msgstr "Lautstärkeregler"
+
+#~ msgid "Show volume button"
+#~ msgstr "Zeige den Lautstärkeregler"
+
+#~ msgid "Visual playlist"
+#~ msgstr "Visuelle Playlist"
+
+#~ msgid "Enable visual playlist"
+#~ msgstr "Aktiviere die visuelle Playlist"
+
+#~ msgid "Enable autoplay"
+#~ msgstr "Aktiviere Autoplay"
+
+#~ msgid "Autoload"
+#~ msgstr "Autoload"
+
+#~ msgid "Load MP3 track when autoplay is disabled"
+#~ msgstr "Lade MP3 Track wenn AutoPlay deaktiviert ist"
+
+#~ msgid "Autonext"
+#~ msgstr "Autonext"
+
+#~ msgid "Play next track when current track ends"
+#~ msgstr "Spiele nächsten Track wenn der Aktuelle endet"
+
+#~ msgid "Keyboard Shortcuts"
+#~ msgstr "Tastaturnavigation"
+
+#~ msgid "Enable keyboard shortcuts"
+#~ msgstr "Aktiviere Tastaturnavigation"
+
+#~ msgid "Show social Links"
+#~ msgstr "Zeige soziale Links"
+
+#~ msgid "Shuffle Button"
+#~ msgstr "Misch Button"
+
+#~ msgid "Show the shuffle button"
+#~ msgstr "Zeige den Misch Button"
+
+#~ msgid "Randomize default playlist"
+#~ msgstr "Mische die Standard Playlist"
+
+#~ msgid "Auto Pop-Up"
+#~ msgstr "Auto Pop-Up"
+
+#~ msgid "Pop out player in a Pop-Up window, when site is loaded"
+#~ msgstr ""
+#~ "Öffnet den Player in einem Pop-Up Fenster, wenn die Seite geladen ist"
+
+#~ msgid "Sortable Playlist"
+#~ msgstr "Sortierbare Playlist"
+
+#~ msgid "Make playlist sortable via Drag & Drop"
+#~ msgstr "Playlist kann via Drag & Drop sortiert werden"
+
+#~ msgid "Initiate first when window is loaded"
+#~ msgstr "Starte erst wenn das Fenster geladen ist"
+
+#~ msgid ""
+#~ "When you see this alert message:<br /> <i style=\"color: #000;\">SM2 "
+#~ "failed to start. Flash missing, blocked or security error? Status: "
+#~ "INIT_TIMEOUT</i>.<br /> Then check this checkbox, this could help to fix "
+#~ "the issue, because the player will be initiated first, when the window is "
+#~ "completely loaded."
+#~ msgstr ""
+#~ "Wenn du diese Warnung siehst:<br /> <i style=\"color: #000;\">SM2 failed "
+#~ "to start. Flash missing, blocked or security error? Status: INIT_TIMEOUT</"
+#~ "i>.<br /> Dann aktiviere dieses Kontrollkästchen, das könnte helfen das "
+#~ "Problem zu beheben, da der Player erst gestartet wird, wenn das Fenster "
+#~ "komplett geladen ist."
+
+#~ msgid "Responsive Layout"
+#~ msgstr "Responsive Layout"
+
+#~ msgid "Include additional CSS to make the player responsive."
+#~ msgstr "Fügt eine zusätzliche CSS ein, um den Player responsive zu machen."
+
+#~ msgid "Add player to every page ?"
+#~ msgstr "Player in jede Seite einfügen ?"
+
+#~ msgid ""
+#~ "Would you like to add the player to every page, then check this checkbox. "
+#~ "Otherwise the player will be only added to pages where a shortcode for "
+#~ "this plugin is found."
+#~ msgstr ""
+#~ "Möchtest du den Player in jede Seite einfügen, dann mach ein Häckchen im "
+#~ "Kasten. Ansonsten wird der Player nur in die Seiten eingefügt, wo ein "
+#~ "Shortcode von diesem Plugin gefunden wird."
+
+#~ msgid "External Buttons"
+#~ msgstr "Externe Buttons"
+
+#~ msgid ""
+#~ "The buttons of the tracks and playlists in your post or page.<br /><a "
+#~ "href=\"%1$s\">Click here to edit the style sheet of these buttons</a>. "
+#~ "You find them at the bottom of the CSS document."
+#~ msgstr ""
+#~ "Die Buttons der Tracks und Playlists in deinen Beiträgen und Seiten.<br /"
+#~ "><a href=\"%1$s\">Klicke hier um die Style Sheet von diesen Buttons zu "
+#~ "bearbeiten</a>. Du findest diese am Ende des Dokuments."
+
+#~ msgid "Play CSS Class"
+#~ msgstr "CSS Klasse für Play"
+
+#~ msgid "Referral CSS Class"
+#~ msgstr "CSS Klasse für die Verweisung"
+
+#~ msgid "Play Text"
+#~ msgstr "Play Text"
+
+#~ msgid "Referral Text"
+#~ msgstr "Verweisungstext"
+
+#~ msgid "Login Text"
+#~ msgstr "Login Text"
+
+#~ msgid "Log in to download"
+#~ msgstr "Log in zum Download"
+
+#~ msgid "Only logged in users can download the tracks."
+#~ msgstr "Nur angemeldete User können Tracks herunterladen."
+
+#~ msgid ""
+#~ "The dimensions of the images in the list/grid items that you add to your "
+#~ "page or post."
+#~ msgstr ""
+#~ "Die Dimensionen der Bilder für die Listen- und Gitterelemente, die du in "
+#~ "deine Seiten und Beiträge hinzufügst."
+
+#~ msgid "List Item Image Width"
+#~ msgstr "Bildbreite von Listenelemente"
+
+#~ msgid "List Item Image Height"
+#~ msgstr "Bildhöhe von Listenelemente"
+
+#~ msgid "Grid Item Image Width"
+#~ msgstr "Bildbreite von Gitterelemente"
+
+#~ msgid "Grid Item Image Height"
+#~ msgstr "Bildhöhe von Gitterelemente"
+
+#~ msgid "Hide track URL with base64"
+#~ msgstr "Verstecke die Track URL mit base64"
+
+#~ msgid ""
+#~ "You can hide the track URL with base64, so users can not download the "
+#~ "track by viewing the source code."
+#~ msgstr ""
+#~ "Du kannst die Track URL mit base64 verstecken, damit die Nutzer den Track "
+#~ "nicht downloaden können indem sie den Quelltext anschauen."
+
+#~ msgid "Public posts"
+#~ msgstr "Öffentliche Beiträge"
+
+#~ msgid "Every track will be published as a public post."
+#~ msgstr "Jeder Track wird als öffentlicher Beitrag veröffentlicht."
+
+#~ msgid "What&acute;s this....?"
+#~ msgstr "Was ist das....?"
+
+#~ msgid ""
+#~ "...yes it is what it is, <strong>a support forum for my products</"
+#~ "strong>. Use this support forum when you have questions according to this "
+#~ "product.<br />Just sign up as a member and post your question in the "
+#~ "<strong>correct category</strong>."
+#~ msgstr ""
+#~ "...ja es ist was es ist, <strong>ein Support Forum für meine Produkte</"
+#~ "strong>. Nutze das Support Forum wenn du Fragen zu meinen Produkten hast."
+#~ "<br />Einfach als Mitglied registrieren und stelle deine Frage in der "
+#~ "<strong>richtigen Kategorie</strong>. Bitte verfasse deine Beiträge nur "
+#~ "in Englisch."
+
+#~ msgid "Set a layout - only for adding a playlist:"
+#~ msgstr "Wähle ein Layout - nur wenn eine Playlist hinzugefügt wird:"
+
+#~ msgid "Soundcloud Client ID"
+#~ msgstr "Soundcloud Client ID"
+
+#~ msgid ""
+#~ " You need a client ID key to use tracks from soundcloud.<br /><a href="
+#~ "\"http://soundcloud.com/you/apps\" target=\"_blank\">Just register a new "
+#~ "App for free and get your Client ID</a>."
+#~ msgstr ""
+#~ "Du brauchst einen Client ID um Tracks von Soundcloud abspielen zu können."
+#~ "<br /><a href=\"http://soundcloud.com/you/apps\" target=\"_blank"
+#~ "\">Einfach kostenlos eine neue App registrieren und erhalte deinen eigene "
+#~ "Client ID</a>."
+
+#~ msgid ""
+#~ "Check out <a href=\"http://dj-templates.com\" target=\"_blank\">dj-"
+#~ "templates.com</a> for more items for Djs and Producers."
+#~ msgstr ""
+#~ "Schau dir <a href=\"http://dj-templates.com\" target=\"_blank\">dj-"
+#~ "templates.com</a> an, um mehr Produkte für Djs und Produzenten zu finden."
